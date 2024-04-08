@@ -107,7 +107,7 @@ exit
 ```
 Now edit a single container pod to create a multi-container pod and add one more container
 ```
-kubectle edit po <pod-name>
+kubectl edit po <pod-name>
 ```
 Enter into a particular container of multi-container pod
 ```
