@@ -88,28 +88,20 @@ kubectl get pod --show-labels
 ```
 To add label to a running pod
 ```
-kubectl label pod <pod-name> cloudthat=k8s
+kubectl label pod httpd-pod cloudthat=k8s
 ```
 Check the labels again
 ```
-kubectl get pod <pod-name> --show-labels
+kubectl get pod httpd-pod --show-labels
 ```
 To add a label when creating a prod
 ```
-kubectl run <pod-name> --image nginx --labels mehar=nafis
+kubectl run test-pod --image nginx --labels task=3
 ```
-Enter inside a single container pod
+Enter inside the container of the pod
 ```
-kubectl exec -it <pod-name> -- /bin/bash
+kubectl exec -it test-pod -- /bin/bash
 ```
 ```
 exit
-```
-Now edit a single container pod to create a multi-container pod and add one more container
-```
-kubectl edit po <pod-name>
-```
-Enter into a particular container of multi-container pod
-```
-kubectl exec -it <pod-name> -c <container-name> -- /bin/bash
 ```
