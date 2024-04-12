@@ -61,7 +61,7 @@ exit
 ```
 Now delete your deployment
 ```
-kubectl delete -f mydep-hp.yaml --force
+kubectl delete -f mydep-hp.yaml 
 ```
 Now ssh into the Node on which the particular pod( in which you went inside and created the index.html file) was running.
 ```
