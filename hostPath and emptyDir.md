@@ -54,7 +54,7 @@ kubectl exec -it <pod-name> -- /bin/bash
 cd /data
 ```
 ```
-echo `Welcome to DevOps Training` > index.html
+echo 'Welcome to DevOps Training' > index.html
 ```
 ```
 exit
